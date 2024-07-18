@@ -31,3 +31,4 @@ const getCountryData = function (country) {
 };
 getCountryData('pakistan');
 getCountryData('uae');
+getCountryData('germany');

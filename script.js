@@ -77,5 +77,3 @@ const getCountryAndNeighbour = function (country) {
   });
 };
 getCountryAndNeighbour('pakistan');
-// getCountryData('uae');
-// getCountryData('germany');

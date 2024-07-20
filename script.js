@@ -77,3 +77,29 @@ const getCountryAndNeighbour = function (country) {
   });
 };
 getCountryAndNeighbour('pakistan');
+
+//   const request = new XMLHttpRequest();
+//   request.open('GET', `https://restcountries.com/v2/name/${country}`);
+//   request.send();
+
+// const request = fetch('https://restcountries.com/v2/name/portugal');
+// console.log('request Fetch', request);
+
+// const getCountryData = function (country) {
+//   fetch(`https://restcountries.com/v2/name/${country}`)
+//     .then(function (response) {
+//       console.log('response promis', response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log('another promise data', data);
+//       renderCountry(data[0]);
+//     });
+// };
+
+const getCountryData = function (country) {
+  fetch(`https://restcountries.com/v2/name/${country}`)
+    .then(response => response.json())
+    .then(data => renderCountry(data[0]));
+};
+getCountryData('portugal');
